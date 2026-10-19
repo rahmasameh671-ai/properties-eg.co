@@ -29,26 +29,39 @@ Official web architecture for **properties-eg.co**, an **Authorized Real Estate 
 ```
 properties-eg/
 ├── index.html                 # Main Landing Page (Hero, 10 Years Legacy, Value Pillars, Lead Capture)
+├── sodic/
+│   └── index.html             # Standalone Dedicated /sodic Internal Route (The Lakes, Ogami, East Vale)
+├── sodic.html                 # Standalone Dedicated /sodic Internal Route Alias
 ├── privacy.html               # Standalone Routed Privacy Policy (100% White on Solid Black)
 ├── privacy-policy.html        # Direct URL routing alias
 ├── terms.html                 # Standalone Routed Terms & Conditions (100% White on Solid Black)
 ├── terms-conditions.html      # Direct URL routing alias
 ├── css/
 │   ├── style.css              # Main corporate Calm Luxury stylesheet (Zero Gold)
+│   ├── styles.css             # Architectural SODIC page stylesheet (Strict Zero Gold)
 │   └── legal.css              # Standalone dark legal stylesheet (#000000 background)
 ├── js/
 │   ├── country-codes.js       # International country dataset with pure vector SVG flags (Zero Mojibake)
-│   └── main.js                # Form processing, country selector, modal engine & WhatsApp triggers
-├── images/                    # High-resolution architectural photography
+│   ├── main.js                # Form processing, country selector, modal engine & WhatsApp triggers
+│   └── sodic.js               # Multi-channel lead capture, Zapier webhook & conversion engine
+├── images/                    # High-resolution architectural photography & SODIC assets
 │   ├── hero-masterview.jpg
 │   ├── luxury-architecture.jpg
-│   └── villas-exterior.jpg
-├── .assetsignore          # Cloudflare Workers static assets ignore configuration
-├── .gitignore             # Standard clean gitignore
-├── .wranglerignore        # Additional Wrangler upload ignore rules
-├── package.json           # Cloudflare deployment & script configuration
-├── wrangler.jsonc         # Cloudflare Workers static assets binding configuration
-└── README.md              # Comprehensive architectural & compliance documentation
+│   ├── villas-exterior.jpg
+│   ├── sodic-logo.png
+│   ├── sodic-east-logo.png
+│   ├── sodic-east-lakes.jpg
+│   ├── ogami-logo.png
+│   ├── ogami-villa.webp
+│   ├── eastvale-logo.png
+│   ├── eastvale-architecture.jpg
+│   └── the-lakes-architecture.jpg
+├── .assetsignore              # Cloudflare Workers static assets ignore configuration
+├── .gitignore                 # Standard clean gitignore
+├── .wranglerignore            # Additional Wrangler upload ignore rules
+├── package.json               # Cloudflare deployment & script configuration
+├── wrangler.jsonc             # Cloudflare Workers static assets binding configuration
+└── README.md                  # Comprehensive architectural & compliance documentation
 ```
 
 ---
