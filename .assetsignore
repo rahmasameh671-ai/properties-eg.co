@@ -1,0 +1,37 @@
+# Cloudflare Workers Static Assets Ignore File
+# Excludes heavy dependencies, version control, build caches, and sensitive configuration
+
+node_modules/
+node_modules/**
+.git/
+.git/**
+.github/
+.github/**
+.wrangler/
+.wrangler/**
+.vscode/
+.vscode/**
+.idea/
+.idea/**
+
+# Package managers and locks
+package.json
+package-lock.json
+bun.lock
+bun.lockb
+yarn.lock
+pnpm-lock.yaml
+
+# Configuration files
+wrangler.json
+wrangler.jsonc
+wrangler.toml
+.assetsignore
+.wranglerignore
+.gitignore
+
+# Documentation & Logs
+README.md
+*.log
+.DS_Store
+Thumbs.db

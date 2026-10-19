@@ -43,8 +43,12 @@ properties-eg/
 │   ├── hero-masterview.jpg
 │   ├── luxury-architecture.jpg
 │   └── villas-exterior.jpg
-├── .gitignore                 # Standard clean gitignore
-└── README.md                  # Comprehensive architectural & compliance documentation
+├── .assetsignore          # Cloudflare Workers static assets ignore configuration
+├── .gitignore             # Standard clean gitignore
+├── .wranglerignore        # Additional Wrangler upload ignore rules
+├── package.json           # Cloudflare deployment & script configuration
+├── wrangler.jsonc         # Cloudflare Workers static assets binding configuration
+└── README.md              # Comprehensive architectural & compliance documentation
 ```
 
 ---

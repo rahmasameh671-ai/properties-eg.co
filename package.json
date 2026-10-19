@@ -1,9 +1,11 @@
 {
-  "name": "properties-eg.co",
+  "name": "properties-eg-co",
   "version": "1.0.0",
   "description": "Ultra-Luxurious Corporate Landing Page for properties-eg.co — Authorized Real Estate Brokerage & Strategic Partner",
-  "main": "index.html",
+  "private": true,
   "scripts": {
+    "deploy": "wrangler deploy",
+    "preview": "wrangler dev",
     "start": "npx serve .",
     "dev": "npx serve ."
   },
