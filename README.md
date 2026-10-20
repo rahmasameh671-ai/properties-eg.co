@@ -29,6 +29,9 @@ Official web architecture for **properties-eg.co**, an **Authorized Real Estate 
 ```
 properties-eg/
 ├── index.html                 # Main Landing Page (Hero, 10 Years Legacy, Value Pillars, Lead Capture)
+├── hyde-park/
+│   └── index.html             # Standalone Dedicated /hyde-park Internal Route (One Hyde Park, Sea Shore, Central)
+├── hyde-park.html             # Standalone Dedicated /hyde-park Internal Route Alias
 ├── sodic/
 │   └── index.html             # Standalone Dedicated /sodic Internal Route (The Lakes, Ogami, East Vale)
 ├── sodic.html                 # Standalone Dedicated /sodic Internal Route Alias
@@ -39,12 +42,14 @@ properties-eg/
 ├── css/
 │   ├── style.css              # Main corporate Calm Luxury stylesheet (Zero Gold)
 │   ├── styles.css             # Architectural SODIC page stylesheet (Strict Zero Gold)
+│   ├── hyde-park.css          # Hyde Park Portfolio Calm Luxury stylesheet (Strict Zero Gold)
 │   └── legal.css              # Standalone dark legal stylesheet (#000000 background)
 ├── js/
 │   ├── country-codes.js       # International country dataset with pure vector SVG flags (Zero Mojibake)
 │   ├── main.js                # Form processing, country selector, modal engine & WhatsApp triggers
-│   └── sodic.js               # Multi-channel lead capture, Zapier webhook & conversion engine
-├── images/                    # High-resolution architectural photography & SODIC assets
+│   ├── sodic.js               # Multi-channel lead capture, Zapier webhook & conversion engine
+│   └── hyde-park.js           # Hyde Park lead capture, country code selector & conversion engine
+├── images/                    # High-resolution architectural photography & brand assets
 │   ├── hero-masterview.jpg
 │   ├── luxury-architecture.jpg
 │   ├── villas-exterior.jpg
@@ -88,7 +93,22 @@ properties-eg/
      3. **Tailored Consultation**: Step-by-step guidance for your investment.
    - CTA: Solid Green WhatsApp button (`#25D366`) reading `Speak to an Expert` linked to `+201033373331`.
 
-3. **Technical Footer & Compliance**:
+3. **Hyde Park Portfolio Dedicated Route (`/hyde-park`)**:
+   - Starts at absolute top (`top: 0`), zero sticky top navbar.
+   - Global Sub-Branding: `By properties-eg.co` & `Independent Real Estate Consultancy`.
+   - Hero Badge: `CURATED RESIDENTIAL PORTFOLIO` & Eyebrow: `BY PROPERTIES-EG.CO`.
+   - Headline: *Exclusive Launch: One Hyde Park*.
+   - Highlights: *Three Iconic Destinations: New Cairo & Ras El Hekma | Starting From 5.9M EGP | Installments Up to 10 Years*.
+   - Strict Clean Lead Form: Title `PRIVATE ENQUIRY`, Subtitle `Request the curated portfolio`, blank Full Name input, split Phone input with pure vector SVG flags (zero mojibake, default Egypt `+20`), solid dark charcoal button reading `SUBMIT`, and legal disclaimer.
+   - Dedicated Project Sections:
+     - **One Hyde Park**: 2 Minutes From AUC • New Cairo, installments up to 10 years, pricing cards (1 BR: 6.4M EGP, 2 BR: 9.3M EGP, 3 BR: 11.7M EGP), solid green WhatsApp button (`#25D366`).
+     - **Sea Shore**: Ras El Hekma Coastal Sanctuary, 5% down payment | 8 years installments, starting from 8M EGP, key highlights (Tiered Sea Views • Mediterranean Loggias • Direct Beach Access), solid green WhatsApp button (`#25D366`).
+     - **Hyde Park Central**: Private Gated Community, 5% down payment | 10 years installments, starting from 5.9M EGP, key highlights (15-Acre Central Park • Full-Service Clubhouse • Single Secure Perimeter), solid green WhatsApp button (`#25D366`).
+   - **Private Consultation Section**: Speak with a property consultant + solid green WhatsApp button reading `Chat on WhatsApp`.
+   - **Footer & Compliance**: Centered `By properties-eg.co`, legal disclaimer, standalone links to Privacy Policy & Terms & Conditions, signature `© 2026 properties-eg.co — Strategic Partners`.
+   - Fixed floating round WhatsApp button linking to `+201033373331`.
+
+4. **Technical Footer & Compliance**:
    - Centered branding: `By properties-eg.co`
    - Mandatory Disclaimer: *"This landing page is operated by properties-eg.co, an authorized real estate brokerage, and is not the official website of any specific developer. Prices and availability are subject to change."*
    - Clickable Standalone Legal Links: `Privacy Policy` and `Terms & Conditions`.
