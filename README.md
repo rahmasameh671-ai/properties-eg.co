@@ -29,6 +29,9 @@ Official web architecture for **properties-eg.co**, an **Authorized Real Estate 
 ```
 properties-eg/
 ├── index.html                 # Main Landing Page (Hero, 10 Years Legacy, Value Pillars, Lead Capture)
+├── palm-hills/
+│   └── index.html             # Standalone Dedicated /palm-hills Internal Route (New Cairo, 97 Hills, Village De La Capitale)
+├── palm-hills.html            # Standalone Dedicated /palm-hills Internal Route Alias
 ├── hyde-park/
 │   └── index.html             # Standalone Dedicated /hyde-park Internal Route (One Hyde Park, Sea Shore, Central)
 ├── hyde-park.html             # Standalone Dedicated /hyde-park Internal Route Alias
@@ -43,13 +46,20 @@ properties-eg/
 │   ├── style.css              # Main corporate Calm Luxury stylesheet (Zero Gold)
 │   ├── styles.css             # Architectural SODIC page stylesheet (Strict Zero Gold)
 │   ├── hyde-park.css          # Hyde Park Portfolio Calm Luxury stylesheet (Strict Zero Gold)
+│   ├── palm-hills.css         # Palm Hills Portfolio Calm Luxury stylesheet (Strict Zero Gold)
 │   └── legal.css              # Standalone dark legal stylesheet (#000000 background)
 ├── js/
 │   ├── country-codes.js       # International country dataset with pure vector SVG flags (Zero Mojibake)
 │   ├── main.js                # Form processing, country selector, modal engine & WhatsApp triggers
 │   ├── sodic.js               # Multi-channel lead capture, Zapier webhook & conversion engine
-│   └── hyde-park.js           # Hyde Park lead capture, country code selector & conversion engine
+│   ├── hyde-park.js           # Hyde Park lead capture, country code selector & conversion engine
+│   └── palm-hills.js          # Palm Hills lead capture, country code selector & conversion engine
 ├── images/                    # High-resolution architectural photography & brand assets
+│   ├── palm-hills-logo.svg
+│   ├── palm-hills-hero.jpg
+│   ├── palm-hills-new-cairo.jpg
+│   ├── 97-hills.jpg
+│   ├── village-de-la-capitale.jpg
 │   ├── hero-masterview.jpg
 │   ├── luxury-architecture.jpg
 │   ├── villas-exterior.jpg
@@ -113,7 +123,35 @@ properties-eg/
      - Signature: © 2026 properties-eg.co — Strategic Partners.
    - Fixed floating round WhatsApp button linking to `+201033373331`.
 
-4. **Technical Footer & Compliance**:
+4. **Palm Hills Developments Portfolio Dedicated Route (`/palm-hills`)**:
+   - Starts at absolute top (`top: 0`), zero top sticky navbar.
+   - Global Sub-Branding: `By properties-eg.co` & `Strategic Marketing Partner` / `Independent Real Estate Consultancy`.
+   - Top Center Branding: Official Palm Hills logo with `By properties-eg.co` sub-branding.
+   - Hero Badge: `EXCLUSIVE PALM HILLS PORTFOLIO`.
+   - Main Headline: *Architectural Excellence in Every Dimension*.
+   - Offer Subtitle & Key Highlights:
+     - *Down Payment Starting from 3% | Installments Up to 10 Years*
+     - *Starting Prices from 7M EGP*
+     - *Fully Finished Apartments & Signature Family Residences*
+   - Frosted Glass Lead Capture Form:
+     - Title: `REGISTER YOUR INTEREST`
+     - Subtitle: `Receive floor plans, updated availability, and payment breakdowns`
+     - Full Name input (clean blank input, NO sample names)
+     - Split Phone input with compact Country Code selector (default Egypt `+20` with pure vector SVG flags, zero mojibake) and clean blank number input
+     - Solid charcoal submit button reading `SUBMIT`
+     - Legal Disclaimer Below Form
+   - Dedicated Project Sections:
+     - **Palm Hills New Cairo**: New Cairo Premier Living, 1, 2, and 3 Bedroom Residences, Fully Finished, Starting from 10.2M EGP, Down Payment Starting from 3% | Installments Up to 10 Years, solid green WhatsApp button (`#25D366`) reading `CONTACT US`.
+     - **97 Hills**: Exclusive Private Sanctuary, Family Homes (Single Family Residences), Starting from 193 SQM, Starting from 28.3M EGP, Down Payment Starting from 3% | Installments Up to 10 Years, solid green WhatsApp button (`#25D366`) reading `CONTACT US`.
+     - **Village De La Capitale**: Prime Capital Living, Luxury Apartments & Exclusive Villas, Starting from 61 SQM, Starting from 7M EGP, Down Payment Starting from 3% | Installments Up to 10 Years, solid green WhatsApp button (`#25D366`) reading `CONTACT US`.
+   - Centered Technical Footer & Compliance:
+     - Centered branding: `By properties-eg.co`
+     - Disclaimer: *"By submitting, you agree to receive communications from properties-eg.co regarding real estate projects. This landing page is operated by properties-eg.co, an independent real estate consultancy, and is not the official website of the developer. Prices and availability are subject to change."*
+     - Centered standalone routed links: `Privacy Policy` and `Terms & Conditions`.
+     - Signature: `© 2026 properties-eg.co — Strategic Partners`.
+   - Fixed floating round WhatsApp button linking to `+201033373331`.
+
+5. **Technical Footer & Compliance**:
    - Centered branding: `By properties-eg.co`
    - Mandatory Disclaimer: *"This landing page is operated by properties-eg.co, an authorized real estate brokerage, and is not the official website of any specific developer. Prices and availability are subject to change."*
    - Clickable Standalone Legal Links: `Privacy Policy` and `Terms & Conditions`.
