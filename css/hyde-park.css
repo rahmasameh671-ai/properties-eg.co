@@ -412,6 +412,17 @@ img {
   color: var(--hp-text-muted);
 }
 
+.hp-hero-disclaimer-note {
+  font-size: 0.725rem;
+  color: var(--hp-text-muted);
+  line-height: 1.5;
+  margin-top: 1rem;
+  padding: 8px 12px;
+  background-color: rgba(255, 255, 255, 0.75);
+  border-radius: var(--hp-radius-sm);
+  border: 1px dashed var(--hp-border-cool);
+}
+
 /* ==========================================================================
    2. FROSTED GLASS LEAD CAPTURE FORM (Right Column)
    ========================================================================== */
@@ -720,6 +731,27 @@ img {
   border-radius: var(--hp-radius-sm);
   border: 1px solid var(--hp-border-cool);
   margin-top: 0.5rem;
+}
+
+.hp-form-legal-links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  margin-top: 8px;
+  font-size: 0.75rem;
+}
+
+.hp-form-legal-link {
+  color: var(--hp-charcoal-primary);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  font-weight: 600;
+  transition: var(--hp-transition);
+}
+
+.hp-form-legal-link:hover {
+  color: #000000;
 }
 
 /* Lead Success State */
@@ -1046,7 +1078,39 @@ img {
 }
 
 /* ==========================================================================
-   5. FOOTER & COMPLIANCE
+   5. AUTHORIZED CONSULTANCY & ADVISORY STRIP (GOOGLE ADS COMPLIANCE)
+   ========================================================================== */
+.hp-about-strip {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  background-color: var(--hp-bg-alabaster);
+  border-top: 1px solid var(--hp-border-cool);
+  text-align: center;
+}
+
+.hp-about-content {
+  max-width: 860px;
+  margin: 0 auto;
+}
+
+.hp-about-title {
+  font-family: var(--hp-font-display);
+  font-size: clamp(1.6rem, 2.6vw, 2.2rem);
+  font-weight: 700;
+  color: var(--hp-charcoal-primary);
+  margin-top: 1.25rem;
+  margin-bottom: 1rem;
+  letter-spacing: 0.02em;
+}
+
+.hp-about-text {
+  font-size: 0.95rem;
+  line-height: 1.8;
+  color: var(--hp-charcoal-secondary);
+}
+
+/* ==========================================================================
+   6. FOOTER & COMPLIANCE (GOOGLE ADS VERIFICATION & TRADEMARK POLICY)
    ========================================================================== */
 .hp-footer {
   background-color: var(--hp-charcoal-deep);
@@ -1057,92 +1121,161 @@ img {
   border-top: 1px solid rgba(255, 255, 255, 0.1);
 }
 
-.hp-footer-content {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  gap: 2rem;
+.hp-footer-grid {
+  display: grid;
+  grid-template-columns: 1.3fr 1fr 1fr 1.3fr;
+  gap: 36px;
+  margin-bottom: 3rem;
+  text-align: left;
 }
 
-.hp-footer-branding {
+.hp-footer-brand-col {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  gap: 8px;
+  gap: 12px;
 }
 
 .hp-footer-logo {
-  height: 44px;
+  height: 42px;
   width: auto;
   object-fit: contain;
   filter: brightness(0) invert(1);
 }
 
-.hp-footer-subbrand {
-  font-family: var(--hp-font-display);
-  font-size: 1.05rem;
-  font-weight: 700;
-  letter-spacing: 0.18em;
+.hp-footer-subbrand-badge {
+  display: inline-block;
+  font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: 0.16em;
   text-transform: uppercase;
   color: #FFFFFF;
+  background-color: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  padding: 4px 10px;
+  border-radius: var(--hp-radius-pill);
+  width: fit-content;
 }
 
-.hp-footer-tagline {
-  font-size: 0.775rem;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
-  color: var(--hp-text-subtle);
-}
-
-.hp-footer-disclaimer-box {
-  max-width: 880px;
-  background-color: rgba(255, 255, 255, 0.04);
-  border: 1px solid rgba(255, 255, 255, 0.08);
-  border-radius: var(--hp-radius-md);
-  padding: 1.25rem 1.5rem;
-  line-height: 1.6;
-}
-
-.hp-footer-disclaimer-text {
-  font-size: 0.775rem;
+.hp-footer-desc {
+  font-size: 0.825rem;
   color: #94A3B8;
-  line-height: 1.6;
+  line-height: 1.65;
 }
 
-.hp-footer-legal-links {
+.hp-footer-col-title {
+  font-size: 0.825rem;
+  font-weight: 800;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  margin-bottom: 1.25rem;
+}
+
+.hp-footer-links-list {
+  list-style: none;
   display: flex;
-  align-items: center;
-  gap: 20px;
+  flex-direction: column;
+  gap: 10px;
 }
 
-.hp-footer-legal-link {
-  font-size: 0.8rem;
-  font-weight: 600;
-  color: #CBD5E1;
-  text-decoration: underline;
-  text-underline-offset: 4px;
+.hp-footer-link {
+  color: #94A3B8;
+  font-size: 0.85rem;
   transition: var(--hp-transition);
 }
 
-.hp-footer-legal-link:hover {
+.hp-footer-link:hover {
+  color: #FFFFFF;
+  padding-left: 3px;
+}
+
+.hp-footer-compliance-text {
+  font-size: 0.825rem;
+  color: #94A3B8;
+  line-height: 1.75;
+}
+
+.hp-footer-compliance-text strong {
+  color: #E2E8F0;
+}
+
+.hp-footer-contact-link {
+  color: #E2E8F0;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  font-weight: 600;
+  transition: var(--hp-transition);
+}
+
+.hp-footer-contact-link:hover {
   color: #FFFFFF;
 }
 
-.hp-footer-legal-sep {
-  color: #64748B;
-  font-size: 0.8rem;
+/* Mandatory Google Ads Trademark & Agency Disclosure Box */
+.hp-footer-disclosures-block {
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  padding-top: 2rem;
+  padding-bottom: 2rem;
 }
 
-.hp-footer-signature {
+.hp-disclosure-notice-box {
+  background-color: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: var(--hp-radius-md);
+  padding: 1.25rem 1.75rem;
+  text-align: center;
+  max-width: 980px;
+  margin: 0 auto;
+}
+
+.hp-disclosure-text {
+  font-size: 0.775rem;
+  color: #94A3B8;
+  line-height: 1.65;
+}
+
+.hp-disclosure-text strong {
+  color: #CBD5E1;
+}
+
+/* Centered Legal Links & Signature (Absolute Bottom) */
+.hp-footer-bottom-bar {
+  text-align: center;
+  padding-top: 1.75rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.hp-footer-legal-centered {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+}
+
+.hp-footer-legal-centered a {
+  color: #CBD5E1;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+  font-weight: 600;
+  font-size: 0.825rem;
+  transition: var(--hp-transition);
+}
+
+.hp-footer-legal-centered a:hover {
+  color: #FFFFFF;
+}
+
+.hp-footer-copyright {
   font-size: 0.775rem;
   color: #64748B;
-  letter-spacing: 0.05em;
-  margin-top: 0.5rem;
+  letter-spacing: 0.04em;
 }
 
 /* ==========================================================================
-   6. FLOATING WHATSAPP BUTTON (Fixed Bottom-Right Round Icon)
+   7. FLOATING WHATSAPP BUTTON (Fixed Bottom-Right Round Icon)
    ========================================================================== */
 .hp-floating-wa {
   position: fixed;
@@ -1234,9 +1367,24 @@ img {
   .hp-pricing-cards-grid {
     grid-template-columns: repeat(3, 1fr);
   }
+
+  .hp-footer-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 32px;
+  }
 }
 
 @media (max-width: 768px) {
+  .hp-footer-grid {
+    grid-template-columns: 1fr;
+    gap: 28px;
+    text-align: center;
+  }
+
+  .hp-footer-brand-col {
+    align-items: center;
+  }
+
   .hp-hero-stats-row {
     grid-template-columns: 1fr;
     gap: 10px;

@@ -105,7 +105,12 @@ properties-eg/
      - **Sea Shore**: Ras El Hekma Coastal Sanctuary, 5% down payment | 8 years installments, starting from 8M EGP, key highlights (Tiered Sea Views • Mediterranean Loggias • Direct Beach Access), solid green WhatsApp button (`#25D366`).
      - **Hyde Park Central**: Private Gated Community, 5% down payment | 10 years installments, starting from 5.9M EGP, key highlights (15-Acre Central Park • Full-Service Clubhouse • Single Secure Perimeter), solid green WhatsApp button (`#25D366`).
    - **Private Consultation Section**: Speak with a property consultant + solid green WhatsApp button reading `Chat on WhatsApp`.
-   - **Footer & Compliance**: Centered `By properties-eg.co`, legal disclaimer, standalone links to Privacy Policy & Terms & Conditions, signature `© 2026 properties-eg.co — Strategic Partners`.
+   - **Authorized Consultancy Strip**: *Why Inquire Through properties-eg.co?* establishing strategic advisory status.
+   - **Google Ads Policy & Legal Compliance**:
+     - Business verification block: Registered operating company (properties-eg.co), office address in New Cairo, direct telephone (+20 100 508 0951), official WhatsApp, and official email.
+     - Official Trademark & Developer Disclosure: Disclaiming official website status of Hyde Park Developments, crediting trademarks, and stating developer authority on pricing and availability.
+     - Dual-location standalone clickable links to Privacy Policy and Terms & Conditions (under lead capture form & centered at absolute bottom).
+     - Signature: © 2026 properties-eg.co — Strategic Partners.
    - Fixed floating round WhatsApp button linking to `+201033373331`.
 
 4. **Technical Footer & Compliance**:
