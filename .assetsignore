@@ -35,3 +35,8 @@ README.md
 *.log
 .DS_Store
 Thumbs.db
+
+# Excluded from properties-eg.co domain deployment (retained on GitHub repository only)
+hyde-park.html
+hyde-park/
+hyde-park/**
