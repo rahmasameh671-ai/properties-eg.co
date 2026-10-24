@@ -204,6 +204,11 @@ function initLeadForm() {
       modalContactWhatsapp.href = waLink;
     }
 
+    // Google Ads Conversion Event
+    if (typeof gtag_report_conversion === 'function') {
+      gtag_report_conversion();
+    }
+
     // Emulate swift corporate response
     setTimeout(() => {
       if (submitBtn) {

@@ -116,7 +116,7 @@ function initLeadCaptureForm() {
         gtag_report_conversion();
       } else if (typeof gtag === 'function') {
         gtag('event', 'conversion', {
-          'send_to': 'AW-10964877445/novGCO2LpqIdEIWBu-wo',
+          'send_to': 'AW-660558623/UtZoCJbxlKgdEJ-m_boC',
           'value': 1.0,
           'currency': 'EGP'
         });

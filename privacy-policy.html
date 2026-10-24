@@ -15,6 +15,29 @@
 
     gtag('config', 'AW-660558623');
   </script>
+
+  <!-- Event snippet for Submit lead form NEW conversion page
+  In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. -->
+  <script>
+  function gtag_report_conversion(url) {
+    var callback = function () {
+      if (typeof(url) != 'undefined') {
+        window.location = url;
+      }
+    };
+    if (typeof gtag === 'function') {
+      gtag('event', 'conversion', {
+          'send_to': 'AW-660558623/UtZoCJbxlKgdEJ-m_boC',
+          'value': 1.0,
+          'currency': 'EGP',
+          'event_callback': callback
+      });
+    } else {
+      callback();
+    }
+    return false;
+  }
+  </script>
   
   <!-- Typography -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
